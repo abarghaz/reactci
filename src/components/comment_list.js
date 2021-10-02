@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 
 const CommentList = (props) => {
   const list = props.comments.map((comment) => (
-    <li key={comment}>{comment}</li>
+    <ul key={comment}>{comment}</ul>
   ));
   return <ul className="comment-list">{list}</ul>;
 };
